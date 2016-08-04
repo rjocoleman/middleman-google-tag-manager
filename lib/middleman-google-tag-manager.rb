@@ -50,4 +50,4 @@ class GoogleTagManager < ::Middleman::Extension
 
 end
 
-GoogleTagManager.register(:google_tag_manager)
+::Middleman::Extensions.register(:google_tag_manager, GoogleTagManager)
