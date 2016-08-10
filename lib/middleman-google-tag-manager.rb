@@ -14,7 +14,7 @@ class GoogleTagManager < ::Middleman::Extension
   helpers do
     def google_tag_manager
       options = extensions[:google_tag_manager].options
-      return unless !legacy_development? && options.development
+      return unless !legacy_development? || options.development
 
       @text ||= <<-END.gsub(/^ {8}/, '')
       <!-- Google Tag Manager -->
@@ -50,4 +50,4 @@ class GoogleTagManager < ::Middleman::Extension
 
 end
 
-GoogleTagManager.register(:google_tag_manager)
+::Middleman::Extensions.register(:google_tag_manager, GoogleTagManager)
