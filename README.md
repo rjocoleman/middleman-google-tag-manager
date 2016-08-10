@@ -6,6 +6,14 @@ __Features__
 
 * Automatically places Google Tag Manager code on all configured pages.
 
+## Installation
+
+```ruby
+  gem 'middleman-google-tag-manager', '< 1'
+```
+
+* Use `middleman-google-tag-manager` version `~> 1` for Middleman 4+
+* Use `middleman-google-tag-manager` version `< 1` for Middleman 3.x
 
 ## Setup and Configuration
 

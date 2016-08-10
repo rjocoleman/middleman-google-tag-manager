@@ -3,7 +3,7 @@ $:.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = 'middleman-google-tag-manager'
-  s.version     = '0.1.0'
+  s.version     = '1.0.0'
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Robert Coleman']
   s.email       = ['github@robert.net.nz']
@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ['lib']
 
-  s.add_runtime_dependency 'middleman-core', '>= 3.4.0'
+  s.add_runtime_dependency 'middleman-core', '>= 4.0'
 end
